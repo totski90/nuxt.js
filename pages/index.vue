@@ -5,9 +5,31 @@
   		<h2 class="subtitle">
   			My nuxt core features reference
   		</h2>
+  		<div class="link">
+  			<nuxt-link
+  				v-for="link in links"
+  				:to="{name: 'deserts-id', params: {id: link.id}}"
+  				:key="link.id"
+  				class="button--grey"
+  			>
+  				{{ link.title }}
+  			</nuxt-link>
+  		</div>
   	</div>
   </section>
 </template>
+
+<script>
+	
+	export default {
+		computed: {
+			links() {
+				return this.$store.state.deserts.all
+			}
+		}
+	}
+
+</script>
 
 <style scoped>
 	
