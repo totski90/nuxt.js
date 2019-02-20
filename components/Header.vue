@@ -4,6 +4,7 @@
 			<ul>
 				<li><nuxt-link to="/">Starting Page</nuxt-link></li>
 				<li><nuxt-link to="/recipes">Recipes</nuxt-link></li>
+				<li><nuxt-link to="/drinks">Drinks</nuxt-link></li>
 				<li><nuxt-link to="/about">About</nuxt-link></li>
 			</ul>
 		</nav>
@@ -13,7 +14,7 @@
 <style scoped>
 	header {
 		width: 100%;
-		height: 30px;
+		height: 75px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
