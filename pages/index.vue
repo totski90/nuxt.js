@@ -5,6 +5,7 @@
   		<h2 class="subtitle">
   			My nuxt core features reference
   		</h2>
+
   		<div class="link">
   			<nuxt-link
   				v-for="link in links"
@@ -14,17 +15,36 @@
   			>
   				{{ link.title }}
   			</nuxt-link>
-  		</div>
+  		</div> 		
+
+  		<div class="images">
+			<Featured v-for="feature in features"
+				:key="feature.id"
+				:thumbnail="feature.thumbnail"
+				:title="feature.title"
+				:previewText="feature.previewText"
+			/>
+	  	</div>  		
   	</div>
   </section>
+
 </template>
 
 <script>
-	
+	import Featured from '@/components/Featured'	
+
 	export default {
+		components: {
+			Featured
+		},
+
 		computed: {
 			links() {
 				return this.$store.state.deserts.all
+			},
+
+			features() {
+				return this.$store.state.featured.all
 			}
 		}
 	}
@@ -52,6 +72,18 @@
 	  justify-content: center;
 	  align-items: center;
 	  text-align: center;
+	}
+	.images {
+		margin-top: 2px;
+		margin-bottom: 2px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.link {
+		padding: 5px 0 10px 0;
 	}
 
 </style>

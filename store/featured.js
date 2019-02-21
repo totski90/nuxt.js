@@ -15,7 +15,7 @@ export const state = () => ({
 		{
 			id: "3",
 			title: 'Another delicious desert',
-			previewText: "Best desert that really boost your immune system",
+			previewText: "Best desert",
 			thumbnail: "http://images6.fanpop.com/image/photos/33200000/Food-food-33299546-1920-1200.jpg"
 		}		
 	]

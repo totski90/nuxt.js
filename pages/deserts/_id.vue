@@ -2,14 +2,13 @@
 	
 	<div class="container">
 	
-		<article>
+		<article class="frame">
+			<div class="thumbnail" :style="{backgroundImage: 'url('+ desert.thumbnail +')'}"></div>
 			<h1 class="title">{{ desert.title }}</h1>
 			<p>{{ desert.previewText }}</p>
 		</article>
-		<br>
-		<hr>
-		<hr>
-		<aside>
+		
+		<aside class="related">
 			<h3>Desert you might enjoy</h3>
 			<ul>
 				<li v-for="related in relatedDeserts">
@@ -57,12 +56,32 @@
 		text-decoration: none;
 		color: black;
 	}
-	.container {	    
+	.container {
+		padding-top: 5px;	    
 	    justify-content: space-between;
 	    line-height: 1.5;
 		display: flex;
 		justify-content: center;		
 		text-align: center;
 	  }
+
+	 .thumbnail {
+		background-position: center;
+		background-size: cover;
+		width: 100%;
+		height: 200px;
+	}
+
+	.related {
+		padding-left: 5px;
+	}
+
+	.frame {
+		box-sizing: border-box;
+		width: 280px;
+		padding: 8px;
+		border: 1px solid #ccc;
+		box-shadow: 0 2px 2px #aaa;
+	}
 
 </style>
