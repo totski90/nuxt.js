@@ -1,24 +1,28 @@
 <template>
   <div>
-    <Header />
-    <nuxt />
+    <TheHeader />
+    <main class="main-content">
+      <nuxt />
+    </main>
+    
   </div>
 </template>
 
 <script>
   
-  import Header from '@/components/Header'
+  // import Header from '@/components/Header'
+  import TheHeader from '@/components/TheHeader'
 
   export default {
     components: {
-      Header
+      TheHeader
     }
   }
 
 </script>
 
 <style>
-html {
+/*html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
@@ -28,7 +32,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-}
+}*/
 
 *,
 *:before,
@@ -65,4 +69,18 @@ html {
   color: #fff;
   background-color: #35495e;
 }
+
+
+/*this is custom which may affect some of the pages contensts*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif, "Lato";
+}
+
+.main-content {
+  margin-top: 4.5rem;
+}
+
 </style>

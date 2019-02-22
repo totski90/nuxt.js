@@ -1,7 +1,9 @@
 <template>
-	<h1>THE ABOUT PAGE</h1>
 
-	
+	<section id="about-us">
+		<h1>That's us!</h1>
+		<p>That's us blogging about some tech staff!</p>
+	</section>	
 
 </template>
 
