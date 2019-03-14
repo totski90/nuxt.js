@@ -8,8 +8,10 @@
 				<nuxt-link to="/recipes" tag="li" class="nav-link"><a>Recipes</a></nuxt-link>
 				<nuxt-link to="/drinks" tag="li" class="nav-link"><a>Drinks</a></nuxt-link>				
 				<nuxt-link to="/about" tag="li" class="nav-link"><a>About</a></nuxt-link>				
+				<nuxt-link to="/auth/login" tag="li" class="nav-link pull-right"><a>Login</a></nuxt-link>
+				<nuxt-link to="/auth/register" tag="li" class="nav-link"><a>Register</a></nuxt-link>
+				<nuxt-link to="/testpage" tag="li" class="nav-link"><a>Test Page</a></nuxt-link>
 			</ul>
-
 		</nav>
 
 	</header>
@@ -62,5 +64,8 @@
 	.nav-link a:active,
 	.nav-link.nuxt-link-exact-active a{
 		color: #06c4d1;
+	}
+	.pull-right {
+		float: right;
 	}
 </style>

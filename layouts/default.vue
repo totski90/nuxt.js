@@ -1,10 +1,12 @@
 <template>
   <div>
-    <TheHeader />       
-    <main class="main-content" style="background: url('http://images6.fanpop.com/image/photos/33200000/Food-food-33299546-1920-1200.jpg'); background-size: cover; background-repeat: no-repeat;">      
+    <TheHeader />
+    <div class="container" >
+      <!-- style="background: url('http://images6.fanpop.com/image/photos/33200000/Food-food-33299546-1920-1200.jpg'); background-size: cover; background-repeat: no-repeat;" -->
+    <main class="main-content">      
       <nuxt />
     </main>
-    
+    </div>    
     <div class="footer"></div>
   </div>
 </template>
@@ -82,6 +84,7 @@ body {
 
 .main-content {
   margin-top: 4.5rem;
+  margin-bottom: 4rem;
 }
 
 .footer {
